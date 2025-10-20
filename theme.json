@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "voltria-blue",
+          "name": "Voltria Blue",
+          "color": "#0A5BFF"
+        },
+        {
+          "slug": "voltria-navy",
+          "name": "Voltria Navy",
+          "color": "#0E2A4F"
+        },
+        {
+          "slug": "gray-900",
+          "name": "Gray 900",
+          "color": "#121417"
+        },
+        {
+          "slug": "gray-600",
+          "name": "Gray 600",
+          "color": "#4B5563"
+        },
+        {
+          "slug": "gray-100",
+          "name": "Gray 100",
+          "color": "#F3F4F6"
+        },
+        {
+          "slug": "accent-green",
+          "name": "Accent Green",
+          "color": "#22C55E"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'",
+          "name": "Inter (system stack)",
+          "slug": "inter"
+        }
+      ]
+    }
+  }
+}
