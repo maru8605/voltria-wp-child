@@ -1,49 +1,34 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
-  "settings": {
-    "color": {
-      "palette": [
-        {
-          "slug": "voltria-blue",
-          "name": "Voltria Blue",
-          "color": "#0A5BFF"
-        },
-        {
-          "slug": "voltria-navy",
-          "name": "Voltria Navy",
-          "color": "#0E2A4F"
-        },
-        {
-          "slug": "gray-900",
-          "name": "Gray 900",
-          "color": "#121417"
-        },
-        {
-          "slug": "gray-600",
-          "name": "Gray 600",
-          "color": "#4B5563"
-        },
-        {
-          "slug": "gray-100",
-          "name": "Gray 100",
-          "color": "#F3F4F6"
-        },
-        {
-          "slug": "accent-green",
-          "name": "Accent Green",
-          "color": "#22C55E"
-        }
-      ]
-    },
-    "typography": {
-      "fontFamilies": [
-        {
-          "fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'",
-          "name": "Inter (system stack)",
-          "slug": "inter"
-        }
-      ]
-    }
-  }
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "primary", "name": "Voltria Primary", "color": "#0A5BFF" },
+				{ "slug": "navy", "name": "Voltria Navy", "color": "#0E2A4F" },
+				{ "slug": "accent", "name": "Voltria Accent", "color": "#22C1DC" },
+				{ "slug": "gray-bg", "name": "Gray Background", "color": "#F5F6FA" },
+				{ "slug": "gray-text", "name": "Gray Text", "color": "#6B7280" },
+				{ "slug": "white", "name": "White", "color": "#FFFFFF" }
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "inter",
+					"name": "Inter (system)",
+					"fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--v-font)"
+		},
+		"color": {
+			"background": "var(--v-white)",
+			"text": "var(--v-gray-900)"
+		}
+	}
 }

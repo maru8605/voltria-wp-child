@@ -1,1 +1,55 @@
 /* Add your custom CSS overrides here */
+/* ====== Voltria: variables globales ====== */
+:root{
+  --v-color-primary:#0A5BFF;
+  --v-color-navy:#0E2A4F;
+  --v-color-accent:#22C1DC;
+
+  --v-gray-900:#121417;
+  --v-gray-text:#6B7280;
+  --v-gray-bg:#F5F6FA;
+  --v-white:#FFFFFF;
+
+  --v-radius:12px;
+  --v-shadow:0 10px 24px rgba(0,0,0,.08);
+  --v-font:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  --v-speed:.2s;
+}
+
+/* Base */
+body{ font-family:var(--v-font); color:var(--v-gray-900); background:var(--v-white); }
+
+/* Utilidades rápidas (podés usarlas como clases en bloques) */
+.bg-primary{ background:var(--v-color-primary)!important; }
+.bg-navy{ background:var(--v-color-navy)!important; }
+.bg-accent{ background:var(--v-color-accent)!important; }
+.bg-gray{ background:var(--v-gray-bg)!important; }
+.text-white{ color:var(--v-white)!important; }
+.text-navy{ color:var(--v-color-navy)!important; }
+.text-gray{ color:var(--v-gray-text)!important; }
+
+/* Botones reutilizables */
+.btn{
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.9rem 1.2rem; border-radius:var(--v-radius);
+  font-weight:600; text-decoration:none; line-height:1;
+  transition:transform var(--v-speed), box-shadow var(--v-speed), background var(--v-speed), color var(--v-speed);
+  box-shadow:var(--v-shadow);
+}
+.btn:hover{ transform:translateY(-1px); }
+.btn--primary{ background:var(--v-color-primary); color:var(--v-white); }
+.btn--navy{ background:var(--v-color-navy); color:var(--v-white); }
+.btn--accent{ background:var(--v-color-accent); color:var(--v-white); }
+.btn--outline{ background:transparent; border:2px solid var(--v-color-primary); color:var(--v-color-primary); }
+.btn--outline:hover{ background:var(--v-color-primary); color:var(--v-white); }
+
+/* Cards de servicio */
+.v-card{
+  background:var(--v-white); border:1px solid #eaecef;
+  border-radius:var(--v-radius); box-shadow:var(--v-shadow);
+  padding:1.2rem; transition:transform var(--v-speed), box-shadow var(--v-speed);
+}
+.v-card:hover{ transform:translateY(-2px); box-shadow:0 14px 28px rgba(0,0,0,.12); }
+.v-card__title{ font-weight:700; color:var(--v-color-navy); margin:.25rem 0 .5rem; }
+.v-card__text{ color:var(--v-gray-text); }
+.v-card__actions{ margin-top:.8rem; }
